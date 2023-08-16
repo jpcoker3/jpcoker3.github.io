@@ -32,9 +32,9 @@ class Header extends HTMLElement {
         <header>
           <h1>Senior Design</h1>
           <nav>
-              <a href="/index.html">Home</a>
+              <a href="../../index.html">Home</a>
               <a href="#">FILLER1</a>
-              <a href="#">About</a>
+              <a href="../../pages/about.html">About</a>
               <a href="https://github.com/jpcoker3/jpcoker3.github.io">Github</a>
           </nav>
         </header>
