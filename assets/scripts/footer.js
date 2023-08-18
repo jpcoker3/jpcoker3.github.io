@@ -6,17 +6,19 @@ class Footer extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
         <style>
+
             footer {
                 background-color: #333;
                 color: white;
+                padding: 5px;
                 text-align: center;
             }
-            
             /* Styling for the navigation links */
             nav {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            padding: 15px;
             }
             nav a {
                 color: white;
