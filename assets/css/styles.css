@@ -50,6 +50,11 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.images-list {
+  display: block;
+}
+
 .image {
 
   background-color: #929090;

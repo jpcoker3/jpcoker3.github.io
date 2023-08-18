@@ -1,4 +1,4 @@
-class Header extends HTMLElement {
+class Footer extends HTMLElement {
     constructor() {
       super();
     }
@@ -6,10 +6,10 @@ class Header extends HTMLElement {
     connectedCallback() {
       this.innerHTML = `
         <style>
-            header {
+            footer {
                 background-color: #333;
                 color: white;
-                padding: 5px;
+                padding: 10px;
                 text-align: center;
             }
             
@@ -18,7 +18,7 @@ class Header extends HTMLElement {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            padding: 12px;
+            padding: 15px;
             }
             nav a {
                 color: white;
@@ -29,17 +29,15 @@ class Header extends HTMLElement {
                 border-radius: 5px;
             }
         </style>
-        <header>
-          <h1>Senior Design</h1>
+        <footer>
+            <h1>Footer</h1>
           <nav>
               <a href="../../index.html">Home</a>
-              <a href="../../pages/development.html">Development</a>
-              <a href="../../pages/about.html">About</a>
               <a href="https://github.com/jpcoker3/jpcoker3.github.io">Documentation</a>
           </nav>
-        </header>
+        </footer>
       `;
     }
   }
   
-  customElements.define('header-component', Header);
+  customElements.define('footer-component', Footer);
