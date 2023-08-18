@@ -9,7 +9,6 @@ class Footer extends HTMLElement {
             footer {
                 background-color: #333;
                 color: white;
-                padding: 10px;
                 text-align: center;
             }
             
@@ -18,7 +17,6 @@ class Footer extends HTMLElement {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
-            padding: 15px;
             }
             nav a {
                 color: white;
