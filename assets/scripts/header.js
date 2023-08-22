@@ -19,6 +19,8 @@ class Header extends HTMLElement {
             justify-content: space-around;
             flex-wrap: wrap;
             padding: 12px;
+            row-gap: 10px;
+            column-gap: 10px;
             }
             nav a {
                 color: white;
