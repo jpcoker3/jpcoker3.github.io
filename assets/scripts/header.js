@@ -5,7 +5,7 @@ class Header extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-        <style>
+      <style>
             header {
                 background-color: #333;
                 color: white;
@@ -16,9 +16,9 @@ class Header extends HTMLElement {
             /* Styling for the navigation links */
             nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             flex-wrap: wrap;
-            padding: 12px;
+            padding: 30px 30px;
             row-gap: 10px;
             column-gap: 10px;
             }
@@ -30,6 +30,7 @@ class Header extends HTMLElement {
                 background-color: #555;
                 border-radius: 5px;
             }
+
         </style>
         <header>
           <h1>Senior Design</h1>
