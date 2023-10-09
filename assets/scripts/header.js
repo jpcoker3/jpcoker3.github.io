@@ -13,7 +13,7 @@ class Header extends HTMLElement {
                 text-align: center;
             }
             img {
-              width: 300px
+              width: 600px
             }
             
             /* Styling for the navigation links */
@@ -37,7 +37,7 @@ class Header extends HTMLElement {
 
         </style>
         <header>
-        <img src="../../assets/images/SafeStep.png" alt="Safe Step Logo">
+        <img src="../../assets/images/SafeStep-long.png" alt="Safe Step Logo">
           <nav>
               <a href="../../index.html">Home</a>
               <a href="../../pages/development.html">Development</a>
