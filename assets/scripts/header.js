@@ -7,10 +7,13 @@ class Header extends HTMLElement {
       this.innerHTML = `
       <style>
             header {
-                background-color: #333;
-                color: white;
+                background-color: #272727;
+                color: #7728BD;
                 padding: 5px;
                 text-align: center;
+            }
+            img {
+              width: 300px
             }
             
             /* Styling for the navigation links */
@@ -18,22 +21,23 @@ class Header extends HTMLElement {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-            padding: 30px 30px;
-            row-gap: 10px;
+            padding: 20px 80px;
+            row-gap: 20px;
             column-gap: 10px;
             }
             nav a {
-                color: white;
+                color: #7728BD;
                 text-decoration: none;
                 display: block;
                 padding: 10px 30px;
-                background-color: #555;
-                border-radius: 5px;
+                background-color: #272727;
+                border-color: #7728BD;
+                border-style: solid;
             }
 
         </style>
         <header>
-          <h1>Senior Design</h1>
+        <img src="../../assets/images/SafeStep.png" alt="Safe Step Logo">
           <nav>
               <a href="../../index.html">Home</a>
               <a href="../../pages/development.html">Development</a>
