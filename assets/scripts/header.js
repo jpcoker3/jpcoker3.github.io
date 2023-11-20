@@ -8,7 +8,7 @@ class Header extends HTMLElement {
       <style>
             header {
                 background-color: #272727;
-                color: #7728BD;
+                color: #8C52FF;
                 padding: 5px;
                 text-align: center;
             }
@@ -26,18 +26,18 @@ class Header extends HTMLElement {
             column-gap: 10px;
             }
             nav a {
-                color: #7728BD;
+                color: #8C52FF;
                 text-decoration: none;
                 display: block;
                 padding: 10px 30px;
                 background-color: #272727;
-                border-color: #7728BD;
+                border-color: #8C52FF;
                 border-style: solid;
             }
 
         </style>
         <header>
-        <img src="../../assets/images/SafeStep-long.png" alt="Safe Step Logo">
+        <img src="../../assets/images/Logos/SafeStep-long.png" alt="Safe Step Logo">
           <nav>
               <a href="../../index.html">Home</a>
               <a href="../../pages/development.html">Development</a>

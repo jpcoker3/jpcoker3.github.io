@@ -71,18 +71,18 @@ body {
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border: 2px solid #7728BD;
+  border: 2px solid #8C52FF;
   border-radius: 5px;
-  color: #7728BD;
+  color: #8C52FF;
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .button:hover {
-  background-color: #7728BD;
+  background-color: #8C52FF;
   color: #272727;
-  border-color: #7728BD;
+  border-color: #8C52FF;
 }
 
 .image-with-text {
@@ -121,3 +121,53 @@ body {
   justify-content: space-around;
   
 }
+
+/* Sliding image display*/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {opacity: .3}
+  to {opacity: 1}
+}
+
+
