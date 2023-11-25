@@ -5,7 +5,7 @@ header {
     text-align: center;
 }
  p {
-  font-size: 40px;
+  font-size: 20px;
  }
 
 /* Styling for the navigation links */
@@ -33,6 +33,7 @@ body {
 .container {
   text-align: center;
 
+
   padding: 20px;
 }
 .obj-container { 
@@ -44,6 +45,12 @@ body {
   font-size: 36px;
   margin-bottom: 20px;
 }
+
+.content {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
 .names {
   font-size: 24px;
   margin-bottom: 40px;
@@ -64,6 +71,17 @@ body {
   margin: 10px;
 }
 
+.button-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; /* Center items horizontally */
+  width: 50%; /* Adjust width as needed */
+  margin: 0 auto; /* Automatically center within the container */
+}
+
+
 .button {
   display: inline-block;
   padding: 10px 20px;
@@ -77,6 +95,7 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  width: 100%;
 }
 
 .button:hover {
@@ -171,3 +190,13 @@ body {
 }
 
 
+.pdf-container {
+  width: 100%; /* Set PDF container to 100% width */
+  display: none;
+  margin-top: 10px;
+}
+
+text-content {
+  width: 50%;
+
+}

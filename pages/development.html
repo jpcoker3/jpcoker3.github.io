@@ -1,35 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Senior Design Website</title>
-<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
-<script src="../assets/scripts/header.js" type="text/javascript" defer></script>
-<script src="../assets/scripts/image-with-button.js" type="text/javascript" defer></script>
-<script src="../assets/scripts/footer.js" type="text/javascript" defer></script>
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeStep</title>
+  <link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
+  <link rel="icon" type="image/png" href="../assets/logo/SafeStep.png">
+  <script src="../assets/scripts/header.js" type="text/javascript" defer></script>
+  <script src="../assets/scripts/footer.js" type="text/javascript" defer></script>
 </head>
 <body>
-  <!--  Navigation Bar -->
+  <!-- Navigation Bar -->
   <header-component></header-component>
 
-<div class="container">
+  <div class="container">
+    <div class="title">Senior Design I Documentation</div>
+    <!-- Buttons to toggle PDFs -->
+    <div class="button-list">
 
-  <!-- Project Information -->
-  <p>Early Ideas</p>
-  <p>Pitch Deck</p>
-  <p>Mid-Semester Review</p>
-  <p>Early Prototypes</p>
-  <p>Code Overview</p>
-  <p>Late Prototypes</p>
-  
-  
+        <!-- Pitch Deck -->
+        <button class="button toggle-btn" data-target="pitch-deck">Pitch Deck Presentation</button>
+        <div class="pdf-container" id="pitch-deck-pdf" style="display: none;">
+          <embed src="../assets/documents/PitchDeckWalkingAlive.pdf" type="application/pdf" width="100%" height="800px" />
+        </div>
 
+        <!-- Design Specifications -->
+        <button class="button toggle-btn" data-target="design-specifications">Design Specifications</button>
+        <div class="pdf-container" id="design-specifications-pdf" style="display: none;">
+          <embed src="../assets/documents/DesignRequirementsSpecifications_REVISION.pdf" type="application/pdf" width="100%" height="800px" />
+        </div>
+
+        <!-- Mid-Design Review -->
+        <button class="button toggle-btn" data-target="mid-design-review">Mid-Design Review Presentation</button>
+        <div class="pdf-container" id="mid-design-review-pdf" style="display: none;">
+          <embed src="../assets/documents/Mid-Semester Review.pdf" type="application/pdf" width="100%" height="800px" />
+        </div>
+
+        <!-- Design Approach -->
+        <button class="button toggle-btn" data-target="design-approach">Design Approach</button>
+        <div class="pdf-container" id="design-approach-pdf" style="display: none;">
+          <embed src="../assets/documents/Approach_Final.pdf" type="application/pdf" width="100%" height="800px" />
+        </div>
+
+        <!-- Final Design -->
+        <button class="button toggle-btn" data-target="final-design">Final Design Presentation</button>
+        <div class="pdf-container" id="final-design-pdf" style="display: none;">
+          <embed src="../assets/documents/Final Design Presentation.pdf" type="application/pdf" width="100%" height="800px" />
+        </div>
+
+        <!-- Executive Summary -->
+        <button class="button toggle-btn" data-target="executive-summary">Executive Summary</button>
+        <div class="pdf-container" id="executive-summary-pdf" style="display: none;">
+          <embed src="../assets/documents/" type="application/pdf" width="100%" height="800px" />
+        </div>
+  </div>
+
+
+    <!-- Add other buttons and PDF containers similarly -->
 
   </div>
-  
-</body>
 
+  <script>
+    // JavaScript to toggle display of PDFs
+    const toggleButtons = document.querySelectorAll('.toggle-btn');
+    toggleButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-target');
+        const pdfContainer = document.getElementById(`${target}-pdf`);
+        if (pdfContainer.style.display === 'none') {
+          pdfContainer.style.display = 'block';
+        } else {
+          pdfContainer.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
 </html>

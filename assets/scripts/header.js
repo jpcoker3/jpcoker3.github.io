@@ -42,7 +42,7 @@ class Header extends HTMLElement {
               <a href="../../index.html">Home</a>
               <a href="../../pages/development.html">Development</a>
               <a href="../../pages/about.html">About</a>
-              <a href="https://github.com/jpcoker3/jpcoker3.github.io">Documentation</a>
+              <a href="https://github.com/jpcoker3/SafeStep">Documentation</a>
           </nav>
         </header>
       `;
