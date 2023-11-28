@@ -51,6 +51,7 @@ body {
   margin: auto;
   width: 50%;
   padding-bottom: 25px;
+  text-align: left;
 }
 
 @media screen and (max-width: 1200px) {
